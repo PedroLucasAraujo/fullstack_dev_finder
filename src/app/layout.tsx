@@ -1,6 +1,6 @@
 import "./globals.css";
-import { ThemeProvider } from "@/src/components/theme-provider";
-import { ModeToggle } from "@/src/components/mode-toggle";
+import { Header } from "./header";
+import { Providers } from "./provider";
 
 export default function RootLayout({
   children,
@@ -12,17 +12,10 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <head />
         <body>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div>
-              <ModeToggle />
-            </div>
+          <Providers>
+            <Header />
             {children}
-          </ThemeProvider>
+          </Providers>
         </body>
       </html>
     </>
