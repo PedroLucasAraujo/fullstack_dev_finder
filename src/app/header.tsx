@@ -50,7 +50,7 @@ export function Header() {
   const session = useSession();
 
   return (
-    <header className="dark:bg-gray-900 bg-gray-100 container mx-auto py-2">
+    <header className=" light:bg-gray-100 dark:bg-gray-900 container mx-auto py-2">
       <div className="flex justify-between items-center">
         <Link
           href="/"
